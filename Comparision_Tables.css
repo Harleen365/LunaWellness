@@ -1,0 +1,94 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #ffe6e6; /* Light pink background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	overflow-x: hidden; /* Ensure horizontal overflow is hidden */
+}
+
+.container {
+	max-width: 800px;
+	padding: 20px;
+	background-color: #fff; /* White container background */
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	position: relative; /* Ensure relative positioning for absolute elements */
+	transition: box-shadow 0.3s ease; /* Transition for box shadow effect */
+}
+
+.container:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+}
+
+h1 {
+	color: #cc3366; /* Dark pink heading color */
+	margin-top: 0; /* Remove default margin for cleaner appearance */
+}
+
+#story {
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #f9f9f9; /* Light gray story background */
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	text-align: left;
+}
+
+#character-options {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.character {
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	overflow: hidden; /* Hide overflowing animation elements */
+	transition: transform 0.3s ease; /* Add transition for smoother effects */
+}
+
+.character img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid transparent;
+	transition:
+		transform 0.3s ease,
+		border-color 0.3s ease,
+		box-shadow 0.3s ease; /* Transition for multiple properties */
+	box-sizing: border-box; /* Include border in width/height calculations */
+}
+
+.character p {
+	margin-top: 5px;
+	color: #ffffff;
+	position: absolute;
+	bottom: -30px; /* Adjust position to make room for animation */
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition:
+		opacity 0.3s ease,
+		bottom 0.3s ease; /* Transition for smooth animation */
+}
+
+.character:hover {
+	transform: scale(1.1); /* Scale up on hover */
+}
+
+.character:hover img {
+	border-color: #cc3366; /* Dark pink border on hover */
+	box-shadow: 0 0 10px rgba(204, 51, 102, 0.4); /* Soft glowing shadow on hover */
+}
+
+.character:hover p {
+	bottom: 0; /* Move text up into view */
+	opacity: 1; /* Show text on hover */
+}
