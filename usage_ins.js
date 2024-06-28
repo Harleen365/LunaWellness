@@ -1,57 +1,41 @@
-function showSection(sectionId) {
-	const sections = document.querySelectorAll('.content-section');
-	sections.forEach(section => {
-		if (section.id === sectionId) {
-			section.style.display = 'block';
-			section.scrollIntoView({ behavior: 'smooth' });
-		} else {
-			section.style.display = 'none';
-		}
+// usage_ins.js
+function changeLanguage() {
+	var language = document.getElementById('language').value;
+	var elements = document.querySelectorAll('[data-lang-en]');
+
+	elements.forEach(function (element) {
+		element.innerText = element.getAttribute('data-lang-' + language);
 	});
 }
 
-function changeLanguage() {
-	const language = document.getElementById('language').value;
-	const elements = document.querySelectorAll('[data-lang-en]');
-
-	elements.forEach(element => {
-		element.textContent = element.getAttribute(`data-lang-${language}`);
+function showSection(sectionId) {
+	var sections = document.querySelectorAll('.content-section');
+	sections.forEach(function (section) {
+		section.style.display = 'none';
 	});
+	document.getElementById(sectionId).style.display = 'block';
 }
 
 function updateProgress(sectionId) {
-	const section = document.getElementById(sectionId);
-	const checkboxes = section.querySelectorAll('input[type="checkbox"]');
-	const progressBar = section.querySelector('.progress-bar');
-	const totalSteps = checkboxes.length;
-	let completedSteps = 0;
-
-	checkboxes.forEach(checkbox => {
+	var checkboxes = document.querySelectorAll(
+		`#${sectionId} input[type="checkbox"]`
+	);
+	var progress = 0;
+	checkboxes.forEach(function (checkbox) {
 		if (checkbox.checked) {
-			completedSteps++;
+			progress += 1;
 		}
 	});
+	var progressBar = document.getElementById(`progress-bar-${sectionId}`);
+	var progressPercentage = (progress / checkboxes.length) * 100;
+	progressBar.style.width = progressPercentage + '%';
 
-	const progressPercent = (completedSteps / totalSteps) * 100;
-	progressBar.style.width = `${progressPercent}%`;
-
-	if (progressPercent === 100) {
-		showModal();
+	if (progressPercentage === 100) {
+		document.getElementById('congratulations-modal').style.display =
+			'block';
 	}
 }
 
-function showModal() {
-	const modal = document.getElementById('congratulations-modal');
-	modal.style.display = 'block';
-}
-
 function closeModal() {
-	const modal = document.getElementById('congratulations-modal');
-	modal.style.display = 'none';
+	document.getElementById('congratulations-modal').style.display = 'none';
 }
-
-window.addEventListener('load', () => {
-	updateProgress('tampons');
-	updateProgress('menstrual-cups');
-	updateProgress('pads');
-});
