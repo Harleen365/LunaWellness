@@ -56,7 +56,7 @@ To get started with LunaWellness and run the site locally, follow these steps:
 LunaWellness is brought to you by the dedicated team of:
 
 - [Gracy Gulati](https://www.linkedin.com/in/gracy-gulati-956061292/)
-- [Gunn Arora](www.linkedin.com/in/gunn-arora-3a0a9b291)
+- [Gunn Arora](https://www.linkedin.com/in/gunn-arora-3a0a9b291/)
 - [Heena Gupta](https://www.linkedin.com/in/heena-gupta-463819271/)
 - [Harleen Kaur](https://www.linkedin.com/in/harleen-kaur-270647284/)
 
