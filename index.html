@@ -1,149 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Period Wellness and Support</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LunaWellness</title>
+        <link rel="stylesheet" href="styles.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: transparent;
+            background-image: none;
+        }
 
-<body>
-    <header>
-        <nav>
-            <div class="logo">Period Wellness</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Support Groups</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        .carousel-control-prev-icon::after,
+        .carousel-control-next-icon::after {
+            content: '';
+            display: inline-block;
+            width: 20px; 
+            height: 20px;
+            background-size: 100% 100%;
+        }
 
-    <section id="FirstSection">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
+        .carousel-control-prev-icon::after {
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23333" d="M11.354 1.646a.5.5 0 010 .708L6.207 7.5l5.147 5.146a.5.5 0 01-.708.708l-5.5-5.5a.5.5 0 010-.708l5.5-5.5a.5.5 0 01.708 0z"%3E%3C/path%3E%3C/svg%3E');
+        }
+
+        .carousel-control-next-icon::after {
+            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill="%23333" d="M4.646 1.646a.5.5 0 01.708 0l5.5 5.5a.5.5 0 010 .708l-5.5 5.5a.5.5 0 01-.708-.708L9.793 8 4.646 2.854a.5.5 0 010-.708z"%3E%3C/path%3E%3C/svg%3E'); 
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">LunaWellness</div>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a
+                            href="mailto:lunawellness.organisation@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="FirstSection">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel"
+                data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Slide1.gif" class="d-block w-100"
+                            alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Slide2.png" class="d-block w-100"
+                            alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Slide3.png" class="d-block w-100"
+                            alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Slide4.jpeg" class="d-block w-100"
+                            alt="Slide 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Slide5.jpeg" class="d-block w-100"
+                            alt="Slide 5">
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2">
+            </section>
+
+            <section class="features" id="features">
+                <div class="feature">
+                    <div class="icon"><i class="fas fa-quote-left"></i></div>
+                    <h2>Daily Affirmations</h2>
+                    <p>Receive daily affirmations and quotes to uplift your
+                        spirit
+                        and boost your confidence.</p>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="feature">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h2>Support Groups</h2>
+                    <p>Join our virtual support groups to connect with others
+                        and
+                        share your journey.</p>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <section class="features" id="features">
-        <div class="feature">
-            <div class="icon"><i class="fas fa-quote-left"></i></div>
-            <h2>Daily Affirmations</h2>
-            <p>Receive daily affirmations and quotes to uplift your spirit and boost your confidence.</p>
-        </div>
-        <div class="feature">
-            <div class="icon"><i class="fas fa-users"></i></div>
-            <h2>Support Groups</h2>
-            <p>Join our virtual support groups to connect with others and share your journey.</p>
-        </div>
-        <div class="feature">
-            <div class="icon"><i class="fas fa-spa"></i></div>
-            <h2>Meditation Guides</h2>
-            <p>Explore our guided meditations to find peace and balance in your daily life.</p>
-        </div>
-    </section>
-
-    <section class="mission" id="mission">
-        <div class="mission-content">
-            <h2>Our Mission</h2>
-            <p>At Period Wellness, our mission is to empower women with knowledge, support, and resources to manage their menstrual health effectively. We aim to create a community where women can share their experiences and learn from each other.</p>
-        </div>
-    </section>
-
-    <section class="latest-articles" id="latest-articles">
-        <div class="articles-content">
-            <h2>Latest Articles</h2>
-            <div class="article">
-                <h3>Understanding PCOS</h3>
-                <p>PCOS is a common hormonal disorder that affects women of reproductive age. Learn about its symptoms, causes, and treatments.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="article">
-                <h3>Top 10 Yoga Poses for Menstrual Pain Relief</h3>
-                <p>Discover the best yoga poses to help alleviate menstrual pain and discomfort, and improve your overall well-being.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="article">
-                <h3>Healthy Eating Tips for Your Menstrual Cycle</h3>
-                <p>Learn how to eat healthy throughout your menstrual cycle to maintain energy levels and reduce symptoms.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="quote" id="quote">
-        <div class="quote-content">
-            <blockquote>"The most common way people give up their power is by thinking they don't have any." - Alice Walker</blockquote>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="contact-content">
-            <h2>Contact Us</h2>
-            <p>Have any questions or need support? Reach out to us anytime.</p>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <section class="user-stories" id="user-stories">
-        <div class="stories-content">
-            <h2>User Stories</h2>
-            <form id="storyForm">
-                <input type="text" id="userName" placeholder="Your Name" required>
-                <textarea id="userStory" placeholder="Your Story" required></textarea>
-                <div class="checkbox">
-                    <input type="checkbox" id="displayNameCheckbox">
-                    <label for="displayNameCheckbox">Show my name</label>
+                <div class="feature">
+                    <div class="icon"><i class="fas fa-spa"></i></div>
+                    <h2>Meditation Guides</h2>
+                    <p>Explore our guided meditations to find peace and balance
+                        in
+                        your daily life.</p>
                 </div>
-                <button type="submit">Submit Story</button>
-            </form>
-            <div id="submittedStories">
-                <!-- User stories will be displayed here -->
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 Period Wellness. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <button id="backToTopBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
-    </footer>
+            <section class="mission" id="mission">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p>At Period Wellness, our mission is to empower women with
+                        knowledge, support, and resources to manage their
+                        menstrual
+                        health effectively. We aim to create a community where
+                        women
+                        can share their experiences and learn from each
+                        other.</p>
+                </div>
+            </section>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
+            <section class="latest-articles" id="latest-articles">
+                <div class="articles-content">
+                    <h2>Latest Articles</h2>
+                    <div class="article">
+                        <h3>Understanding PCOS</h3>
+                        <p>PCOS is a common hormonal disorder that affects women
+                            of
+                            reproductive age. Learn about its symptoms, causes,
+                            and
+                            treatments.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="article">
+                        <h3>Top 10 Yoga Poses for Menstrual Pain Relief</h3>
+                        <p>Discover the best yoga poses to help alleviate
+                            menstrual
+                            pain and discomfort, and improve your overall
+                            well-being.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                    <div class="article">
+                        <h3>Healthy Eating Tips for Your Menstrual Cycle</h3>
+                        <p>Learn how to eat healthy throughout your menstrual
+                            cycle
+                            to maintain energy levels and reduce symptoms.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote" id="quote">
+                <div class="quote-content">
+                    <blockquote>"Because every period deserve understanding."
+                        - LunaWellness</blockquote>
+                </div>
+            </section>
+
+            <section class="user-stories" id="user-stories">
+                <div class="stories-content">
+                    <h2>User Stories</h2>
+                    <form id="storyForm">
+                        <input type="text" id="userName" placeholder="Your Name"
+                            required>
+                        <textarea id="userStory" placeholder="Your Story"
+                            required></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" id="displayNameCheckbox">
+                            <label for="displayNameCheckbox">Show my
+                                name</label>
+                        </div>
+                        <button type="submit">Submit Story</button>
+                    </form>
+                    <div id="submittedStories">
+                        <!-- User stories will be displayed here -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact-content">
+                    <h2>Contact Us</h2>
+                    <p>Have any questions or need support? Reach out to us
+                        anytime.</p>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name"
+                            required>
+                        <input type="email" id="email" placeholder="Your Email"
+                            required>
+                        <textarea id="message" placeholder="Your Message"
+                            required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Period Wellness. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button id="backToTopBtn" title="Back to top"><i
+                        class="fas fa-arrow-up"></i></button>
+            </footer>
+
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script>
         // Initialize EmailJS
         (function () {
             emailjs.init('urpc3kn68WS97JelD'); // Replace with your EmailJS user ID
@@ -200,6 +275,6 @@
             alert('Your story has been submitted successfully!');
         });
     </script>
-</body>
+        </body>
 
-</html>
+    </html>
