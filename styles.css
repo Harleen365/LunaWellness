@@ -88,6 +88,10 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+.feature a{
+    text-decoration: none;
+}
+
 .icon {
     font-size: 3rem;
     color: #e91e63;
@@ -124,35 +128,6 @@ nav ul li a:hover {
     color: #666;
 }
 
-.testimonials {
-    padding: 4rem 1rem;
-    background: #f8f9fa;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #e91e63;
-}
-
-.testimonials .testimonial {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.testimonials .testimonial:hover {
-    transform: scale(1.05);
-}
-
-.testimonials .testimonial p {
-    font-size: 1.1rem;
-    color: #666;
-}
 
 .latest-articles {
     padding: 4rem 1rem;
@@ -407,3 +382,7 @@ footer p {
     color: #666;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* a{
+    text-decoration: none;
+} */
