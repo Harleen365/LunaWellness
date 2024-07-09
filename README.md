@@ -1,8 +1,6 @@
 # LunaWellness
 
-## Hackathon Project: BUILDWITHDELHI
-
-Welcome to LunaWellness, our innovative project for the BUILDWITHDELHI hackathon. Our mission is to empower girls and young women by providing comprehensive and accessible knowledge about menstrual health and overall well-being.
+Welcome to LunaWellness, our innovative project. Our mission is to empower girls and young women by providing comprehensive and accessible knowledge about menstrual health and overall well-being.
 
 ### Project Overview
 
@@ -64,4 +62,4 @@ LunaWellness is brought to you by the dedicated team of:
 
 *CtrlAltDefeat*
 
-We are proud to present LunaWellness as part of the BUILDWITHDELHI hackathon. Our commitment is to empower girls through knowledge, support, and comprehensive resources, helping them navigate their menstrual health with confidence and informed choices.
+Our commitment is to empower girls through knowledge, support, and comprehensive resources, helping them navigate their menstrual health with confidence and informed choices.
